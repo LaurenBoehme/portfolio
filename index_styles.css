@@ -15,6 +15,9 @@ html {
 body {
 	overflow: scroll;
 -webkit-overflow-scrolling: touch;
+/*i literally ca nNOT get scroll to work i worked on it for two days so yolo
+heres the code for scroll if my life was actually going right and if it worked*/
+
 	color: white;
 	position: relative;
 	margin-left: auto;
@@ -26,6 +29,7 @@ body {
 	max-width: 1020px;
 	min-width: 640px;
 	background-color: rgb(193, 234, 255);
+	-webkit-box-shadow:0px 80px 100px 30px rgb(27, 42, 66);
 	box-shadow:0px 80px 100px 30px rgb(27, 42, 66);
 	background-image: linear-gradient(rgb(3, 57, 132), rgb(0, 0, 0));
 	
@@ -89,7 +93,9 @@ aside{
 aside img{
 	
 	border: 5px solid black;
+	-webkit-border-radius: 50%;
 	border-radius: 50%;
+	-webkit-box-shadow:0px 0px 100px 30px rgb(27, 42, 66);
 	box-shadow:0px 0px 100px 30px rgb(27, 42, 66);
 }
 
@@ -170,11 +176,7 @@ footer{
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-	
-	article p{
-		
-		order: 99;
-	}
+
 
 	footer{
 		font-weight: bold;
@@ -186,10 +188,6 @@ footer{
 	
 }
 	
-
-
-@media only screen and (min-width: 481px) {
 	a#navicon{
 		display: none;
 	}
-}
