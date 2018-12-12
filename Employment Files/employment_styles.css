@@ -151,3 +151,7 @@ footer{
 }
 
 }
+
+a#navicon{
+	display: none;
+}
