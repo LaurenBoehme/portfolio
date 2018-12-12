@@ -101,3 +101,53 @@ footer{
    clear: both;
    	background-image: radial-gradient(rgb(68, 70, 76), rgb(0, 0, 0));
 }
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/@media only screen and (max-width: 480px) {
+
+	html{
+		background-image: none;
+		width: 100%;
+		height: 100%;
+	}
+	nav.horizontal ul{
+		display: none;
+	}
+	
+
+	
+	a#navicon:hover+ul, nav.horizontal ul:hover{
+		display: block;
+		color:black;
+	}
+	
+	a#navicon{
+		background-color: blue;
+		display: block;
+	}
+	
+		body header img{
+		max-width: 400px;
+	}
+
+
+	body {
+		position: fixed;
+		height: 100%;
+		display: block;
+		margin: 0 0 0 0;
+		min-width: 100%;
+		
+	}
+	
+	footer{
+		font-weight: bold;
+	text-align: auto;
+	font-size: .6em;
+	vertical-align: center;
+	text-align: center;
+}
+
+}

@@ -83,13 +83,15 @@ section p{
 	color: rgb(119, 121, 124);
 }
 
+section h3{
+	clear: both;
+}
 
 /* Skills List Styles */
 
 ul#software{
 	line-height: 1px;
-	width: 75%;
-	margin-top:40px;
+	margin-top:10px;
 	margin-bottom:40px;
 	margin-left:auto;
 	margin-right: auto;
@@ -99,7 +101,7 @@ ul#software li{
 	display:block;
 	width:50%;
 	float: left;
-	margin-bottom:30px;
+	margin-bottom:1px;
 }
 ul#software p{
 	float:left;
@@ -108,26 +110,26 @@ ul#software p{
 
 ul#mentions{
 	line-height: 1px;
-	width: 75%;
-	margin-top:40px;
-	margin-bottom:40px;
+	margin-bottom:20px;
 	margin-left:auto;
 	margin-right: auto;
 }
 
 ul#mentions li{
 	display:block;
-	width:50%;
+	width:100%;
 	float: left;
-	margin-bottom:30px;
+	margin-bottom:10px;
 }
 ul#mentions p{
 	float:left;
-	width:70%;
+}
+
+#navicon{
+	display: none;
 }
 
 /* Footer Styles*/
-
 footer{
 	text-align: center;
 	background-color: #333;
@@ -138,4 +140,59 @@ footer{
    height: 40px;
    clear: both;
    	background-image: radial-gradient(rgb(68, 70, 76), rgb(0, 0, 0));
+}
+
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/@media only screen and (max-width: 480px) {
+
+	html{
+		background-image: none;
+		width: 100%;
+		height: 100%;
+	}
+	nav.horizontal ul{
+		display: none;
+	}
+	
+
+	
+	a#navicon:hover+ul, nav.horizontal ul:hover{
+		display: block;
+	}
+	
+	a#navicon{
+		background-color: blue;
+		display: block;
+	}
+	
+		body header img{
+		max-width: 400px;
+	}
+
+
+	body {
+		overflow: scroll;
+		position: fixed;
+		height: 100%;
+		display: block;
+		margin: 0 0 0 0;
+		min-width: 100%;
+	}
+	
+	body ul#software::after{
+		clear: both;
+	}
+	
+	
+	
+	footer{
+		font-weight: bold;
+	text-align: auto;
+	font-size: .6em;
+	vertical-align: center;
+	text-align: center;
+}
+
 }
