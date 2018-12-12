@@ -166,7 +166,9 @@ a#navicon{
 }
 
 }
-
-a#navicon{
-	display: none;
+@media only screen and (min-width: 481px) {
+	
+	a#navicon{
+		display: none;
+	}
 }
